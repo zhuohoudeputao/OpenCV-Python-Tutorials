@@ -1,4 +1,4 @@
-<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default">
 
 # Image Processing in OpenCV
 ## Geometric Transformations of Images
@@ -75,3 +75,4 @@ $$
 $$
 Edge\_Gradient(G) = \left| G_{x} \right| + \left| G_{y} \right|
 $$
+</script>
