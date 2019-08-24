@@ -74,3 +74,17 @@ $$
 Edge\_Gradient(G) = \left| G_{x} \right| + \left| G_{y} \right|
 $$
 
+## Contour
+### Contour Properties
+$$
+Aspect Ratio = \frac{Width}{Height}
+$$
+$$
+Extent = \frac{Object Area}{Bounding Rectangle Area}
+$$
+$$
+Solidity = \frac{Contour Area}{Convex Hull Area}
+$$
+$$
+Equivalent\ Diameter = \sqrt{\frac{4\times Contour Area}{\pi}}
+$$
