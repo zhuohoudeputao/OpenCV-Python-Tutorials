@@ -88,3 +88,25 @@ $$
 $$
 Equivalent\ Diameter = \sqrt{\frac{4\times Contour Area}{\pi}}
 $$
+
+# Feature Detection and Description
+## Harris Corner Detection
+$$
+E(u,v) = \sum_{x,y} \underbrace{w(x,y)}_\text{window function} \, [\underbrace{I(x+u,y+v)}_\text{shifted intensity}-\underbrace{I(x,y)}_\text{intensity}]^2
+$$
+$$
+E(u,v) \approx \begin{bmatrix} u & v \end{bmatrix} M \begin{bmatrix} u \\ v \end{bmatrix}
+$$
+$$
+M = \sum_{x,y} w(x,y) \begin{bmatrix}I_x I_x & I_x I_y \\ I_x I_y & I_y I_y \end{bmatrix}
+$$
+$$
+R = det(M) - k(trace(M))^2
+$$
+$$
+R = \lambda_1 \lambda_2 - k(\lambda_1+\lambda_2)^2
+$$
+## Shi-TomasiCorner Detector
+$$
+R = min(\lambda_1, \lambda_2)
+$$
