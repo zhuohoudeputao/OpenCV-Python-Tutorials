@@ -110,3 +110,25 @@ $$
 $$
 R = min(\lambda_1, \lambda_2)
 $$
+
+# Camera Calibration and 3D Reconstruction
+## Camera Calibration
+### Radical Distortion
+$$
+x_{distorted} = x( 1 + k_1 r^2 + k_2 r^4 + k_3 r^6) 
+\\ 
+y_{distorted} = y( 1 + k_1 r^2 + k_2 r^4 + k_3 r^6)
+$$
+### Tangential Distortion 
+$$
+x_{distorted} = x + [ 2p_1xy + p_2(r^2+2x^2)] 
+\\ 
+y_{distorted} = y + [ p_1(r^2+ 2y^2)+ 2p_2xy]
+$$
+### Information we need
+$$
+Distortion \; coefficients=(k_1 \hspace{10pt} k_2 \hspace{10pt} p_1 \hspace{10pt} p_2 \hspace{10pt} k_3)
+$$
+$$
+camera \; matrix = \left [ \begin{matrix} f_x & 0 & c_x \\ 0 & f_y & c_y \\ 0 & 0 & 1 \end{matrix} \right ]
+$$
